@@ -118,6 +118,5 @@ class DNSProviderInterfaceTest extends TestCase
     public function testTagNameConstant_isCorrectlyDefined(): void
     {
         $this->assertSame('ddns.dns.provider', DNSProviderInterface::TAG_NAME);
-        $this->assertIsString(DNSProviderInterface::TAG_NAME);
     }
 } 

@@ -96,7 +96,6 @@ class IPResolverInterfaceTest extends TestCase
     public function testTagNameConstant_isCorrectlyDefined(): void
     {
         $this->assertSame('ddns:ip:resolver', IPResolverInterface::TAG_NAME);
-        $this->assertIsString(IPResolverInterface::TAG_NAME);
     }
     
     /**
