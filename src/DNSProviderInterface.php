@@ -9,7 +9,7 @@ use Symfony\Component\DependencyInjection\Attribute\AutoconfigureTag;
 /**
  * DDNS 服务提供商接口
  */
-#[AutoconfigureTag(DNSProviderInterface::class)]
+#[AutoconfigureTag(name: DNSProviderInterface::class)]
 interface DNSProviderInterface
 {
     const TAG_NAME = 'ddns.dns.provider';

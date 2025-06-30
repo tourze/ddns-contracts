@@ -9,7 +9,7 @@ use Symfony\Component\DependencyInjection\Attribute\AutoconfigureTag;
 /**
  * IP 地址解析器接口
  */
-#[AutoconfigureTag(IPResolverInterface::class)]
+#[AutoconfigureTag(name: IPResolverInterface::class)]
 interface IPResolverInterface
 {
     const TAG_NAME = 'ddns:ip:resolver';
