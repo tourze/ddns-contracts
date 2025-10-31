@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Tourze\DDNSContracts;
 
 use Symfony\Component\DependencyInjection\Attribute\AutoconfigureTag;
+use Tourze\DDNSContracts\DTO\ExpectResolveResult;
 
 /**
  * DDNS 服务提供商接口
@@ -12,12 +13,10 @@ use Symfony\Component\DependencyInjection\Attribute\AutoconfigureTag;
 #[AutoconfigureTag(name: DNSProviderInterface::class)]
 interface DNSProviderInterface
 {
-    const TAG_NAME = 'ddns.dns.provider';
+    public const TAG_NAME = 'ddns.dns.provider';
 
     /**
      * 获取提供商名称
-     *
-     * @return string
      */
     public function getName(): string;
 
